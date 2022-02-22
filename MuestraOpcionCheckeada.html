@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="eleccion" value="opcion1" checked>Opcion1<br/>
+    <input type="radio" name="eleccion" value="opcion2" >Opcion2<br/>
+    <input type="radio" name="eleccion" value="opcion3" >Opcion3<br/>
+    <input type="radio" name="eleccion" value="opcion4" >Opcion4<br/>
+    <input type="radio" name="eleccion" value="opcion5" >Opcion5<br/>
+    <script>
+        function mostraOpcionCheckeada(){
+            var opciones=document.getElementsByName("eleccion");
+
+            for (let i = 0; i < opciones.length; i++) {
+                if(opciones[i].checked){
+                    alert("Seleccionada ",opciones[i].value);
+                }
+                
+            }
+        }
+
+    </script>
+</body>
+</html>
